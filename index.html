@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <style>
+        .address label{
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+    <form action="/submit_registration" method="post">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+        <div>
+            <label for="gender">Gender:</label>
+            
+            <label for="male">Male</label>
+            <input type="radio" id="gender" name="gender" value="male" required>
+
+            <label for="female">Female</label>
+            <input type="radio" id="gender" name="gender" value="female">
+
+            <label for="gender">Other</label>
+            <input type="radio" id="gender" name="gender" value="other">
+
+        </div>
+
+        <div class="address">
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="2" cols="25" required>
+
+            </textarea>
+        </div>
+
+        <div>
+            <label for="telephone">Telephone:</label>
+            <input type="tel" id="telephone" name="telephone" placeholder="+2341235489256" required>
+        </div>
+
+        <div>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="asgb@gmail.com" required>
+        </div>
+
+        <div>
+            <label for="course">Course:</label>
+            <input type="text" id="course" name="course"  required>
+        </div>
+
+        <div>
+            <button type="submit" onclick="successfulRegistration()">Register</button>
+            <button type="button" onclick="cancelRegistration()">Cancel</button>
+        </div>
+    </form>
+
+    <script>
+        function cancelRegistration() {
+            // Add your own logic for canceling the registration process
+            alert("Registration canceled");
+        }
+
+        //function successfulRegistration() {
+            // Add your own logic for canceling the registration process
+         //   alert("Registration Successful");
+        //}        
+
+    </script>
+
+
+
+</body>
+</html>
